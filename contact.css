@@ -10,6 +10,10 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh; /* Make sure the body takes the full viewport height */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    
 }
 
 .contact-div {
@@ -19,10 +23,56 @@ body {
     justify-content: center;
     width: 50%;
     height: auto;
-    background: rgba(255, 255, 255, 0.5); 
+    background: rgba(14, 14, 14, 0.5); 
     border-radius: 8px; 
     padding: 20px; 
+    margin-left: 350px;
 }
 .contact-div span{
     font-size: 25px;
+    font-weight: bold;
+    font-family: helvetica, sans-serif;
+    text-shadow: 2px 1px rgba(222, 214, 214, 0.383);
+    padding: 3px 70px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(7, 6, 6, 0.55); /* Bootstrap primary blue color */
+    color: rgb(239, 234, 234);
+    box-shadow: 0 4px 6px rgb(2, 2, 2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+label{
+    font-weight: bold;
+    color: white;
+    
+}
+
+
+
+h3{
+    font-weight: bold;
+    text-shadow: 4px 3px rgba(0, 0, 0, 0.296);
+    color: white;
+}
+
+.contact-div span:hover {
+    background-color: #151617e3; /* Darker shade of blue */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    outline: none;
+    border: none;
+}
+
+.contact-div span:active {
+    background-color: #242526aa; /* Even darker shade of blue */
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.submit_btn{
+    padding-top: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
