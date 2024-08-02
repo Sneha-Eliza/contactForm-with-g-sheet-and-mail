@@ -31,7 +31,7 @@ body {
     position: relative;
 }
 .contact-div span{
-    
+    font-size: 25px;
     font-weight: bold;
     font-family: helvetica, sans-serif;
     text-shadow: 2px 1px rgba(222, 214, 214, 0.383);
