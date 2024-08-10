@@ -30,7 +30,7 @@
 
   
         <label for="message">Enter your Message</label>
-        <textarea style="height: 100px;" type="text" class="form-control" id="message" name="message" placeholder="Enter Message"> </textarea>
+        <textarea type="text" style="height: 100px;" type="text" class="form-control" id="message" name="message" placeholder="Enter Message"></textarea>
 
         
         <button type="submit" class="submit_btn"><span id="btn_txt">Submit</span></button>
@@ -92,17 +92,11 @@
 </script>
 
 <script>
-    const textarea = document.getElementById('message');
-
-    // Set the initial height based on the scrollHeight, but don't let it shrink below the min-height
-    textarea.style.height = textarea.scrollHeight + 'px';
+    const textarea = document.getElementById('autoResizeTextarea');
 
     textarea.addEventListener('input', function() {
-        // Reset the height so the scrollHeight can be recalculated
-        this.style.height = 'auto';
-    
-        // Set the height to the scrollHeight but ensure it doesn’t shrink below the initial height
-        this.style.height = Math.max(this.scrollHeight, this.style.minHeight.replace('px', '')) + 'px';
+        this.style.height = 'auto'; // Reset the height
+        this.style.height = this.scrollHeight + 'px'; // Set the height to match content
     });
 
 </script>

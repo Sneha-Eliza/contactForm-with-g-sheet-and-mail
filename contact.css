@@ -54,10 +54,10 @@ label{
 
 #message{
     width: 100%; /* or a specific width if needed */
-    min-height: 50px; /* Minimum height for placeholder */
+    min-height: 100px; /* Minimum height for placeholder */
     max-height: 500px; /* Optional: set a maximum height */
     resize: none; /* Disable manual resizing */
-    overflow-y: hidden; /* Hide vertical scrollbar */
+    
     box-sizing: border-box; 
 }
 
